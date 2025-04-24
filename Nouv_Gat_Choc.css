@@ -10,10 +10,8 @@ body{
 
 div.contenu{
     background-color: white;
-    margin: 60px 10% 60px 10%;
-    padding: 0 30px 30px 30px;
-    min-width: 340px;
-    box-shadow: 10px 10px;
+    margin: 40px 8px 60px 8px;
+    padding: 0 8px 20px 8px;
     overflow: visible;
 }
 
@@ -69,17 +67,17 @@ table.position{
     width: 100%; 
     background-color: #6c829dc0;
     color: white; 
-    height: 60px;
+    height: 40px;
 }
 
 table.position td{
     text-align: center;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: bold;
     vertical-align: top;
 }
 table.position th{
-    font-size: 16px;
+    font-size: 13px;
     vertical-align: bottom;
     font-weight: bold;
     padding: 6px;
@@ -94,7 +92,7 @@ img.info{
 }
 
 div.colonne{
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -107,12 +105,7 @@ div.colonne h2{
 }
 
 div.colonne1{
-    margin-right: 10%;
     display: inline-block;
-}
-
-div.colonne2{
-    float: right;
 }
 
 div.colonne1 p{
@@ -151,4 +144,48 @@ table.preparation td.preparation_etape{
 table.preparation tr{
     height: 40px;
 }
+
+/* Style pour ordinateur */
+@media only screen and (min-width: 768px){
+    div.contenu{
+        margin: 60px 10% 60px 10%;
+        padding: 0 30px 30px 30px;
+        min-width: 350px;
+        box-shadow: 10px 10px;
+    }
+    table.position{
+        height: 60px;
+    }
+    table.position td{
+        font-size: 14px;
+    }
+    table.position th{
+        font-size: 16px;
+    }
+
+    div.colonne{
+        width: 45%;
+    }
+
+    div.colonne1{
+        margin-right: 10%;
+    }
+
+    div.colonne2{
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    div.contenu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+    }
+}
+  
+
+
+
+
 
